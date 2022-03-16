@@ -1,13 +1,20 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Program entry point
- * 
- * Return: 0 on success. Error code otherwise
- */
+* main - Entry point
+* write a program tha prints Holberton, followed by a new line.
+* Return: Always (Success)
+*/
 
-void print_puchar(void)
+int main(void)
 {
-	_putchar("_putchar")
-	return (0)
+	char *ch = "_putchar";
+
+	while (*ch)
+	{
+		_putchar(*ch);
+		ch++;
+	}
+	_putchar('\n');
+return (0);
 }
